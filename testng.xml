@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Reporter">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<listeners>
+		<listener class-name="seleniumfirstproject.ListnerImpl"></listener>
+	</listeners>
+	<test thread-count="2" name="Test" parallel="false" verbose="2">
+		<packages>
+		<package name="seleniumfirstproject.*"></package>
+		<package name="testCases.*"></package>
+		
+		</packages>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
